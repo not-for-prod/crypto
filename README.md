@@ -57,7 +57,7 @@ Currently supported coin types:
 
 | Cryptocurrency | Coin Type | Constant |
 |---------------|-----------|----------|
-| TRON          | 195       | `coin_type.Tron` |
+| TRON          | 195       | `cointype.Tron` |
 
 *Note: The library can be extended to support additional cryptocurrencies by adding coin type constants and address generation functions.*
 
