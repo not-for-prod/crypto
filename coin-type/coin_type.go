@@ -1,4 +1,4 @@
-package coin_type
+package cointype
 
 const (
 	Bitcoin  = 0
