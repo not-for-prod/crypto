@@ -34,7 +34,7 @@ func main() {
     // Generate TRON keys from mnemonic
     privateKey, publicKey, err := crypto.GenerateKeysFromMnemonic(
         mnemonic,
-	    cointype.Tron,  // TRON coin type
+	cointype.Tron,  // TRON coin type
         0,               // First account
         0,               // External chain (receiving addresses)
         0,               // First address
