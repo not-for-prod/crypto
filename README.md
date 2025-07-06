@@ -64,6 +64,7 @@ Currently supported coin types:
 ## Acknowledgments
 
 - [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) - Mnemonic code for generating deterministic keys
+- [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032/derivation.png)
 - [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) - Multi-Account Hierarchy for Deterministic Wallets
 - [SLIP-0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md) - Registered coin types for BIP44
 

@@ -5,7 +5,6 @@ import (
 	"log"
 
 	"github.com/not-for-prod/crypto"
-	cointype "github.com/not-for-prod/crypto/coin-type"
 )
 
 func main() {
@@ -19,10 +18,10 @@ func main() {
 	// Generate TRON keys from mnemonic
 	privateKey, publicKey, err := crypto.GenerateKeysFromMnemonic(
 		mnemonic,
-		cointype.Tron, // TRON coin type
-		0,             // First account
-		0,             // External chain (receiving addresses)
-		0,             // First address
+		195, // TRON coin type
+		0,   // First account
+		0,   // External chain (receiving addresses)
+		0,   // First address
 	)
 	if err != nil {
 		log.Fatal(err)
