@@ -1,4 +1,4 @@
-package builder
+package crypto
 
 import "github.com/tyler-smith/go-bip39"
 
