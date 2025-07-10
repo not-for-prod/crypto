@@ -4,20 +4,20 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/not-for-prod/crypto"
-	cointype "github.com/not-for-prod/crypto/coin-type"
+	"github.com/not-for-prod/hdwallet"
+	cointype "github.com/not-for-prod/hdwallet/coin-type"
 )
 
 func main() {
 	// Generate a 12-word mnemonic (128 bits entropy)
-	mnemonic, err := crypto.GenerateMnemonic(128)
+	mnemonic, err := hdwallet.GenerateMnemonic(128)
 	if err != nil {
 		log.Fatal(err)
 	}
 	fmt.Printf("Mnemonic: %s\n", mnemonic)
 
 	// Generate TRON keys from mnemonic
-	privateKey, publicKey, err := crypto.GenerateKeysFromMnemonic(
+	privateKey, publicKey, err := hdwallet.GenerateKeysFromMnemonic(
 		mnemonic,
 		cointype.Tron, // TRON coin type
 		0,             // First account
@@ -29,7 +29,7 @@ func main() {
 	}
 
 	// Generate TRON address
-	address := crypto.GenerateTronAddress(publicKey)
+	address := hdwallet.GenerateTronAddress(publicKey)
 	fmt.Printf("TRON Address: %s\n", address)
 	fmt.Printf("Private Key: %x\n", privateKey.Serialize())
 	fmt.Printf("Public Key: %x\n", publicKey.SerializeCompressed())

@@ -1,4 +1,4 @@
-package crypto
+package hdwallet
 
 import "github.com/tyler-smith/go-bip39"
 
