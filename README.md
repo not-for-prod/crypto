@@ -18,7 +18,7 @@ go get github.com/not-for-prod/hdwallet
 "golang.org/x/hdwallet/sha3"
 ```
 
-## Quick Start
+## Usage Example
 
 ```go
 // Generate a 12-word mnemonic (128 bits entropy)
