@@ -11,5 +11,5 @@
 package cointype
 
 const (
-	Tron = 159
+	Tron = 195
 )
